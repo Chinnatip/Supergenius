@@ -95,7 +95,7 @@ group :development do
 end
 
 group :production do
-  ruby '2.3.0'
+  ruby '2.2.3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
