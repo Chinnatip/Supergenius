@@ -4,6 +4,9 @@ source 'https://rubygems.org'
 # https://devcenter.heroku.com/articles/ruby-default-web-server
 # https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server
 
+source "https://rubygems.org"
+ruby "2.5.1"
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.1'
 gem 'bundler', '1.17.3'
