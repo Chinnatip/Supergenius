@@ -103,8 +103,12 @@ class Course < ApplicationRecord
   end
 
   def self.parse_course_kit(c)
-    sem = Semester.where(sem_code: c[:semester]).first
-    return "#{sem[:year]} | #{sem[:name]} | #{Student.parse_grade(c[:grade])} | #{c[:name]}"
+    begin
+      sem = Semester.where(sem_code: c[:semester]).first
+      return "#{sem[:year]} | #{sem[:name]} | #{Student.parse_grade(c[:grade])} | #{c[:name]}"
+    rescue
+      return "-"
+    end    
   end
 
   def self.details(obj)
