@@ -70,7 +70,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-gem 'nokogiri', '~> 1.6', '>= 1.6.8'
+gem 'nokogiri', '~> 1.12'
 gem 'chart-js-rails'
 gem 'chartkick'
 gem 'sunspot_rails', '~> 2.2', '>= 2.2.7'
